@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Practical DevOps</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css">
+	<style>
+		.reveal .slides {
+			text-align: left;
+		}
+		
+		html.title div.slide-background.present,
+		html.title div.slide-background.past,
+		html.title div.slide-background.future {
+			background-color: #00abec;
+		}
+		
+		div.overview div.slide-background {
+			background-color: white!important;
+		}
+		
+		.extra-spacing-top {
+			margin-top: 35px!important;
+		}
+
+		img {
+			border: none!important;
+		}
+		
+		img.small-image {
+			width: 50%;
+			height: auto;
+		}
+	</style>
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-state="title">
+				<h2>Practical DevOps Training</h2>
+
+				<p>
+					<small>
+						Trainer Name | Trainer Company<br/>
+						<a href="mailto:demo@trash-mail.com">demo@trash-mail.com</a> |
+						<a href="http://someblog.com">http://someblog.com</a> |
+						<a href="http://someotherlink.com">http://someotherlink.com</a>
+					</small>
+				</p>
+			</section>
+
+			<!-- INTRODUCTION -->
+			<section>
+				<section data-state="title">
+					<h2>Introduction</h2>
+
+					<p>
+						<small>
+							Welcome<br/>
+							Introduction of participants<br/>
+							Training overview<br/>
+							Organizational matters
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Content</h2>
+
+					<ul>
+						<li class="fragment">Develop SPAs with Visual Studio</li>
+						<li class="fragment">RESTful web APIs with C# and ASP.NET Core 1</li>
+						<li class="fragment">Cross-platform build- and test-automation</li>
+						<li class="fragment">Microsoft Azure with Azure Resource Manager (ARM)</li>
+						<li class="fragment">Running SPAs in Azure App Services and Docker</li>
+						<li class="fragment">Automate deployment with Release Management</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Training Structure</h2>
+
+					<div class="fragment">
+						<ul>
+							<li>
+								Presentation (approx. 60%)<br/>
+								<small>A few slides, focus on short demos</small>
+							</li>
+							<li>
+								Time for hands-on (approx. 40%)<br/>
+								<small>Free-style or step-by-step, depending on your experience</small>
+							</li>
+						</ul>
+					</div>
+					<div class="fragment extra-spacing-top">
+						<ul>
+							<li>
+								Day 1 - DEV: Focus on Visual Studio<br/>
+								<small>ASP.NET Core 1, RESTful Web APIs, web development in VS</small>
+							</li>
+							<li>
+								Day 2 - OPS: Focus on cloud<br/>
+								<small>Automate build, test and deployment, Azure App Services and Docker</small>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2>Organizational Matters</h2>
+
+					<ul>
+						<li class="fragment">
+							Time schedule<br/>
+							<small>Starting time, breaks, lunch, end times</small>
+						</li>
+						<li class="fragment">
+							Breaks<br/>
+							<small>Coffee, snacks, drinks, lunch</small>
+						</li>
+						<li class="fragment">
+							Code of conduct<br/>
+							<small>Follow rules of venue (e.g. smoking), punctuality, etc.</small>
+						</li>
+						<li class="fragment">
+							Materials<br/>
+							<small><a href="https://github.com/rstropek/PracticalDevOpsTraining" target="_blank">Everything is available on GitHub</a></small>
+						</li>
+					</ul>
+				</section>
+
+
+				<section>
+
+					<p>Prerequisites:</p>
+
+					<ul>
+						<li>Visual Studio 2015 Update 2</li>
+						<li>Microsoft Azure Subscription (admin)</li>
+						<li>Visual Studio Team Services Subscription (admin)</li>
+					</ul>
+				</section>
+			</section>
+
+			<!-- ENVIRONMENT -->
+			<section>
+				<section data-state="title">
+					<h2>Setting up the Environment</h2>
+
+					<p>
+						<small>
+							Do you have all prerequisites?<br/>
+							<br/>
+							Visual Studio<br/>
+							Microsoft Azure<br/>
+							Visual Studio Team Services
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Visual Studio</h2>
+
+					<ul>
+						<li>
+							Visual Studio 2015<br/>
+							<small>
+								Latest version: <a href="http://go.microsoft.com/fwlink/?LinkId=691129" target="_blank">Update 2</a>
+								(Preview of <a href="https://www.visualstudio.com/en-us/downloads/visual-studio-next-downloads-vs.aspx" target="_blank">Visual Studio "15"</a> available, not used here)								
+							<img class="small-image" src="img/visual-studio-about.png" />
+							</small>
+						</li>
+						<li>
+							How to get it?
+							<small>
+								<a href="https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx" target="_blank">Download</a>
+								- Community Ed. and Visual Studio Code are free, trial for Enterprise Ed. available<br/>
+								<a href="https://www.visualstudio.com/en-us/products/compare-visual-studio-2015-products-vs.aspx">Compare editions</a> 
+							</small>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Visual Studio on Azure</h2>
+					
+					<img src="img/azure-visual-studio-vms.png" />
+				</section>
+
+				<section>
+					<h2>Tools and Extensions</h2>
+					
+					<p class="fragment">Note: ASP.NET 5, Core 1.0, and .NET Core 1</p>
+
+					<ul class="fragment">
+						<li><a href="https://nodejs.org/en/" target="_blank">Node.js with NPM</a></li>
+						<li><a href="https://git-scm.com/" target="_blank">Git for Windows</a></li>
+						<li><a href="https://visualstudiogallery.msdn.microsoft.com/c94a02e9-f2e9-4bad-a952-a63a967e3935" target="_blank">ASP.NET and Web Tools for VS 2015 (Preview)</a></li>
+						<li><a href="https://azure.microsoft.com/en-us/downloads/" target="_blank">Azure SDK for VS 2015</a></li>
+						<li><a href="https://visualstudiogallery.msdn.microsoft.com/0f5b2caa-ea00-41c8-b8a2-058c7da0b3e4" target="_blank">VS 2015 Tools for Docker (Preview)</a></li>
+						<li><a href="https://www.docker.com/products/docker-toolbox" target="_blank">Docker Toolbox</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Microsoft Azure</h2>
+					
+					<ul>
+						<li><a href="https://azure.microsoft.com/en-us/" target="_blank">Azure Homepage</a></li>
+						<li>Use your company's Enterprise Agreement</li>
+						<li>Pay-as-you-go</li>
+						<li><a href="https://azure.microsoft.com/en-us/free/" target="_blank">Get free trial</a></li>
+						<li><a href="https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/" target="_blank">Use MSDN benefits</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Visual Studio Team Services</h2>
+					
+					<ul>
+						<li>
+							<a href="https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs" target="_blank">Get VSTS account</a><br/>
+							<small>Free for small teams (<a href="https://www.visualstudio.com/pricing/visual-studio-team-services-pricing-vs" target="_blank">pricing</a>)</small>
+						</li>
+						<li><a href="https://www.visualstudio.com/en-us/products/subscriber-benefits-vs.aspx" target="_blank">Use MSDN subscriber benefits</a></li>
+					</ul>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+	</script>
+</body>
+
+</html>
