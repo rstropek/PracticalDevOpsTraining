@@ -1,4 +1,4 @@
-# Excercise 5
+# Exercise 5
 
 
 ## Learnings

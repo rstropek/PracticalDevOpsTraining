@@ -1,4 +1,4 @@
-# Excercise 4
+# Exercise 4
 
 
 ## Learnings
