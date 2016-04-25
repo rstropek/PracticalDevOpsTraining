@@ -4,7 +4,13 @@
 
 This repository and its content has been created for the training "Practical DevOps". Its content is described below. The trainings take place all over Western Europe in spring 2016. Note that the content of the repository will not be kept up to date after all the trainings took place.
 
+
+## Slides and Exercises
+
 **Note that you can view the slides online at [http://rstropek.github.io/PracticalDevOpsTraining/](http://rstropek.github.io/PracticalDevOpsTraining/)**
+
+**You find the exercises of the training in the [Exercises](Exercises) folder.**
+
 
 ## Training Content
 
