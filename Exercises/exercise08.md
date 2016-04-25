@@ -51,7 +51,7 @@
 
 1. Get Microsoft's Docker image for ASP.NET Core: `docker pull microsoft/aspnet` 
 
-1. Start a new interactive Docker container: `docker run -it -p 5000:5000 -v ...:/src microsoft/aspnet /bin/bash`
+1. Start a new interactive Docker container: `docker run -it -p 5000:5000 -v ~/PracticalDevOpsTraining/Sample/AspNetCore1:/src microsoft/aspnet /bin/bash`
 
 1. Inside of the Docker container, navigate to the mounted `src` folder: `cd src`
 
@@ -64,3 +64,20 @@
 
 1. In your browser, open `http://yourvmname.cloudapp.net:5000/api/books`.
 
+
+## Create Docker Image for Web App
+
+1. Exit from Docker container **but stay on Docker VM**.
+
+1. Navigate to `PracticalDevOpsTraining/Sample`: `cd ~/PracticalDevOpsTraining/Sample`
+
+1. Build image from `Dockerfile`: `docker build -t myaspnet .`
+
+1. Run container from image: `docker run -d -p 5000:5000 myaspnet`
+
+1. Use `docker ps` and `docker logs` to make sure your container is up and running.
+
+1. If you want to try calling our Web API using your browser, don't forget to open port 5000 for your Docker VM.<br/>
+   ![Open Port](img/azure-open-vm-ports.png)
+
+1. In your browser, open `http://yourvmname.cloudapp.net:5000/api/books`.
