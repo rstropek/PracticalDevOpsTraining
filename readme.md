@@ -7,9 +7,11 @@ This repository and its content has been created for the training "Practical Dev
 
 ## Slides and Exercises
 
-**Note that you can view the slides online at [http://rstropek.github.io/PracticalDevOpsTraining/](http://rstropek.github.io/PracticalDevOpsTraining/)**
+**Note that you can view the slides online at [http://rstropek.github.io/PracticalDevOpsTraining/](http://rstropek.github.io/PracticalDevOpsTraining/)**.
 
 **You find the exercises of the training in the [Exercises](Exercises) folder.**
+
+Slides and exercises are currently still work in progress.
 
 
 ## Training Content
