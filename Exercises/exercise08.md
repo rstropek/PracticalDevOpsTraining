@@ -11,7 +11,7 @@
 
 ## ASP.NET Core 1 Web App in Visual Studio 2015
 
-1. Open [Sample/AspNetCore1.sln](../Sample/AspNetCore1.sln) in Visual Studio 2015.
+1. Open [Sample/AspNetCore1.sln](../Sample/) in Visual Studio 2015.
 
 1. Build the solution and make sure that there are no errors.
 
