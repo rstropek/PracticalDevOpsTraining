@@ -1,0 +1,39 @@
+# Exercise 8
+
+
+## Learnings
+
+1. Basics about new project system in ASP.NET Core 1.0
+1. Running web app with cross-platform web server Kestrel
+1. Basics about Node.js-based web tools in Visual Studio 2015
+
+
+## ASP.NET Core 1 Web App in Visual Studio 2015
+
+1. Open [Sample/AspNetCore1.sln](../Sample/AspNetCore1.sln) in Visual Studio 2015.
+
+1. Build the solution and make sure that there are no errors.
+
+1. In Visual Studio, look at `project.json` and make yourself familiar with the code.
+
+1. Use Visual Studio's *Task Runner* to run Gulp task `default`.<br/>
+   ![Task Runner](img/visual-studio-run-gulp.png)
+
+
+## Run ASP.NET Core 1 with Kestrel
+
+1. Open a developer command prompt and navigate to the directory `Sample/AspNetCore1`.
+
+1. Run `dnvm install 1.0.0-rc1-update1 -r coreclr -arch x64` to make sure CoreCLR is installed on your computer.
+
+1. Run `dnvm use 1.0.0-rc1-update1 -r coreclr -arch x64` to select CoreCLR.
+
+1. Run `dnu restore` to restore necessary packages from NuGet.
+
+1. Run `npm install` to restore necessary NPM packages.
+
+1. Run `dnx web` to start your web app using the cross-platform Kestrel web server.<br/>
+   ![Run Kestrel](img/run-kestrel.png)
+
+1. Open `http://localhost:5000/index.html` to test your web app.
+
