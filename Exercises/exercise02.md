@@ -97,7 +97,7 @@
 
 1. Search for the following line in `Services/NameGenerator.cs`: `var bookNameTokens = await Task.FromResult(bookNameTokensDummy);`
 
-1. Replace `Services/NameGenerator.cs` with the implementation from [Exercise-2-Service-Implementation](Assets\Exercise-2-Service-Implementation/NameGenerator.cs).
+1. Replace `Services/NameGenerator.cs` with the implementation from [Exercise-2-Service-Implementation](Assets/Exercise-2-Service-Implementation/NameGenerator.cs).
 
 1. Run your Web Api `http://localhost:2690/api/books` using a browser or *Postman* and note how the book names are now generated based on data from Azure Storage.
 

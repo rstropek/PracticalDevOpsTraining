@@ -6,6 +6,7 @@
 1. Basics about new project system in ASP.NET Core 1.0
 1. Running web app with cross-platform web server Kestrel
 1. Basics about Node.js-based web tools in Visual Studio 2015
+1. 
 
 
 ## ASP.NET Core 1 Web App in Visual Studio 2015

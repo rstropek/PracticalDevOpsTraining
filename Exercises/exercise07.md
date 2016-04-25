@@ -31,7 +31,7 @@ If you are very familiar with PowerShell, you can do the following steps using t
    ![Save Template](img/azure-save-template.png)
 
 1. Edit the ARM template in Azure Portal.<br/>
-   ![Edit Template](img\azure-edit-template.png)
+   ![Edit Template](img/azure-edit-template.png)
    
 1. Replace all `-dev` by `-test` and save the changed template.
 

@@ -40,7 +40,7 @@
    ![Commit Changes](img/commit-changs.png)
 
 1. Take a look at the committed code in the VSTS portal.<br/>
-   ![Code in Portal](img\code-in-vsts.png)
+   ![Code in Portal](img/code-in-vsts.png)
    
 
 ## Setup Build
