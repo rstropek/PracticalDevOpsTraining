@@ -45,6 +45,22 @@
    
 1. Use an SSH Client (on Windows e.g. *PuTTY*) and connect to your new VM.
 
-1. Make sure that Docker is up and running using: `docker info`.
+1. Make sure that Docker is up and running using: `docker info`
 
-1.  
+1. Clone the sample repository for this training: `git clone https://github.com/rstropek/PracticalDevOpsTraining.git`
+
+1. Get Microsoft's Docker image for ASP.NET Core: `docker pull microsoft/aspnet` 
+
+1. Start a new interactive Docker container: `docker run -it -p 5000:5000 -v ...:/src microsoft/aspnet /bin/bash`
+
+1. Inside of the Docker container, navigate to the mounted `src` folder: `cd src`
+
+1. Restore NuGet packages: `dnu restore`
+
+1. Run our sample in the Docker container: `dnx web`
+
+1. If you want to try calling our Web API using your browser, don't forget to open port 5000 for your Docker VM.<br/>
+   ![Open Port](img/azure-open-vm-ports.png)
+
+1. In your browser, open `http://yourvmname.cloudapp.net:5000/api/books`.
+
