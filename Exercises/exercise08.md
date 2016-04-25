@@ -37,3 +37,14 @@
 
 1. Open `http://localhost:5000/index.html` to test your web app.
 
+
+## Run Web App in a Docker Container
+
+1. Add a *Docker on Ubuntu* VM to your resource group.<br/>
+   ![Docker on Ubuntu](img/create-docker-vm.png)
+   
+1. Use an SSH Client (on Windows e.g. *PuTTY*) and connect to your new VM.
+
+1. Make sure that Docker is up and running using: `docker info`.
+
+1.  

@@ -30,8 +30,7 @@ namespace AspNetCore1Angular2Intro
             services.AddOptions();
             var builder = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
-                .AddEnvironmentVariables()
-                .AddApplicationInsightsSettings(developerMode: true);
+                .AddEnvironmentVariables();
             var configuration = builder.Build();
 
             // Publish options read from configuration file. With that,
@@ -39,9 +38,6 @@ namespace AspNetCore1Angular2Intro
             // BooksController).
             services.Configure<BooksDemoDataOptions>(
                 configuration.GetSection("booksDemoDataOptions"));
-
-            // Add AI configuration
-            services.AddApplicationInsightsTelemetry(configuration);
 
             // Publish singleton for name generator
             services.AddSingleton(typeof(INameGenerator), typeof(NameGenerator));
@@ -83,10 +79,6 @@ namespace AspNetCore1Angular2Intro
             // Use file server to serve static files
             app.UseDefaultFiles();
             app.UseFileServer();
-
-            // Use AI request telemetry
-            app.UseApplicationInsightsRequestTelemetry();
-            app.UseApplicationInsightsExceptionTelemetry();
 
             // Add middlewares (CORS and MVC)
             app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
