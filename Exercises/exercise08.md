@@ -18,6 +18,13 @@
 
 1. In Visual Studio, look at `project.json` and make yourself familiar with the code.
 
+1. **Discussion points:**
+   * New project structure (`.xproj`)
+   * New configuration system (JSON instead of XML, options-pattern, etc.)
+   * Dependency injection in ASP.NET Core 1.0
+   * Integration of web development tools like NPM, Node.js, Gulp, etc. in Visual Studio
+   * Code walk-through for Angular 2.0 code 
+
 1. Use Visual Studio's *Task Runner* to run Gulp task `default`.<br/>
    ![Task Runner](img/visual-studio-run-gulp.png)
 
@@ -25,6 +32,10 @@
 ## Run ASP.NET Core 1 with Kestrel
 
 1. Open a developer command prompt and navigate to the directory `Sample/AspNetCore1`.
+
+1. **Discussion points:**
+   * Describe basics of ASP.NET Core 1.0 tools like `dnvm`, `dnu`, and `dnx`
+   * Speak about upcoming changes in the next RC (`dotnet` CLI)
 
 1. Run `dnvm install 1.0.0-rc1-update1 -r coreclr -arch x64` to make sure CoreCLR is installed on your computer.
 
@@ -37,10 +48,17 @@
 1. Run `dnx web` to start your web app using the cross-platform Kestrel web server.<br/>
    ![Run Kestrel](img/run-kestrel.png)
 
+1. **Discussion points:**
+   * Relation of Kestrel and IIS on Windows
+
 1. Open `http://localhost:5000/index.html` to test your web app.
 
 
 ## Run Web App in a Docker Container
+
+1. **Discussion points:**
+   * Short introduction into Docker's basic concepts
+   * Speak about differences to virtual machines
 
 1. Add a *Docker on Ubuntu* VM to your resource group.<br/>
    ![Docker on Ubuntu](img/create-docker-vm.png)
@@ -54,6 +72,9 @@
 1. Get Microsoft's Docker image for ASP.NET Core: `docker pull microsoft/aspnet` 
 
 1. Start a new interactive Docker container: `docker run -it -p 5000:5000 -v ~/PracticalDevOpsTraining/Sample/AspNetCore1:/src microsoft/aspnet /bin/bash`
+
+1. **Discussion points:**
+   * Describe concept of volume mappings (`-v`) and port mappings (`-p`)
 
 1. Inside of the Docker container, navigate to the mounted `src` folder: `cd src`
 
@@ -74,6 +95,10 @@
 1. Navigate to `PracticalDevOpsTraining/Sample`: `cd ~/PracticalDevOpsTraining/Sample`
 
 1. Build image from `Dockerfile`: `docker build -t myaspnet .`
+
+1. **Discussion points:**
+   * Speak about basic concepts of Dockerfiles
+   * Code walk-through for `Dockerfile`
 
 1. Run container from image: `docker run -d -p 5000:5000 myaspnet`
 

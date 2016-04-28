@@ -10,6 +10,11 @@
 
 ## Add Test Project
 
+1. **Discussion points:**
+   * Describe why test automation is very important for short iteration times and continuous delivery
+   * Discuss different types of automated tests (e.g. unit tests, integration tests, automated UI tests, etc.)
+   * Discuss the importance of fast tests (e.g. less costs for hosted build controllers, fast tests are executed more often, less waiting time for dev teams, etc.) and how mocking of backend services can help to achieve that 
+
 1. Add a test project to your Visual Studio solution.<br/>
    ![Add test project](img/visual-studio-add-test.png)
 
@@ -30,7 +35,12 @@
    * `Install-Package Microsoft.Owin.Host.SystemWeb -Project Books.Test`
    * `Install-Package Microsoft.AspNet.WebApi.OwinSelfHost -Project Books.Test`
 
+
 ## Add and Run Tests
+
+1. **Discussion points:**
+   * Describe the concept of mocking
+   * Short introduction to Microsoft Fakes (shims vs. stubs)
 
 1. Add *Fakes* assembly for `Books` reference:<br/>
    ![Add Fakes](img/add-fakes-assembly.png)
@@ -49,10 +59,22 @@
     </Fakes>
    ```
 
-1. Copy `.cs` files from [Assets/Exercise-3-Tests](Assets/Exercise-3-Tests) into your test project. Make yourself familiar with the two test files. Note how OWIN is used to host a web server for an integration test.
+1. Copy `.cs` files from [Assets/Exercise-3-Tests](Assets/Exercise-3-Tests) into your test project. Make yourself familiar with the two test files.
+
+1. **Discussion points:**
+   * Short introduction into unit testing with Visual Studio
+   * Describe how OWIN is used to host a web server in an integration test (`IntegrationTest.cs`)
 
 1. Build your test project. There should not be errors.
 
 1. Open Visual Studio's *Test Explorer* and run all tests.<br/>
    ![Test Explorer](img/visual-studio-test-explorer.png)
 
+   
+## Further Ideas
+
+If you have time left, you could additionally cover topics like:
+
+* Create a Visual Studio web and load test for our Web API
+* Run the load test locally and in the cloud
+* (Not recommended but possible if you have a very web-development-oriented audience) Add a Jasmine unit test for Angular client

@@ -5,9 +5,14 @@
 
 1. Basics about Application Insights
 1. Connecting to Application Insights using instrumentation key
+1. Analyze Application Insights data in the Azure Portal and Visual Studio
 
 
 ## Create Application Insights
+
+1. **Discussion points:**
+   * Discuss why telemetry and logging are important especially in Microservices architectures
+   * Describe the basics of Application Insights (e.g. high-level features, architecture, pricing models, etc.)
 
 1. Open [Azure Portal](https://portal.azure.com) and sign in.
 
@@ -63,6 +68,9 @@
     }
    ```
 
+1. **Discussion points:**
+   * Describe basics of Application Insights SDK (e.g. exception logging, metrics)
+
 
 ## Run Application and View Telemetry
 
@@ -75,7 +83,23 @@
 
 1. See if your application telemetry appears.
 
+1. **Discussion points:**
+   * Let people play a bit with building Application Insights dashboards in the Azure portal
+   * Describe concept of custom processing of Application Insights data
+   * Brief overview about other Application Insights modules (e.g. for IaaS)
+
 1. Open *Application Insights Search* in Visual Studio while debugging your application. Refresh `http://localhost:2690/api/books` multiple times. See if your application telemetry appears.<br/>
    ![Application Insights Search](img/visual-studio-application-insights.png)
    
- 
+ 1. **Discussion points:**
+    * Point out how calls to dependent services are tracked automatically
+    * Show how unnecessary calls to Blob Storage in our app become visible by analyzing Application Insights telemetry data
+
+   
+## Further Ideas
+
+If you have time left, you could additionally cover topics like:
+
+* Describe how to link Application Insights with wide-spread logging frameworks like [NLog](http://nlog-project.org/) ([Microsoft.ApplicationInsights.NLogTarget NuGet package](https://www.nuget.org/packages/Microsoft.ApplicationInsights.NLogTarget/))
+* Demonstrate PowerBI and Application Insights
+* Show [Application Insights Analytics](https://blogs.msdn.microsoft.com/bharry/2016/03/28/introducing-application-analytics/)

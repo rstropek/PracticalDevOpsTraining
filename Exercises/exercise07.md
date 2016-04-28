@@ -19,6 +19,12 @@
 1. Download exported template and make yourself familiar with the code.<br/>
    ![Download Template](img/azure-template-download.png)
 
+1. **Discussion points:**
+   * Describe basic concepts of Azure Resource Manager and ARM templates
+   * Speak about structure of ARM templates (e.g. parameters, variables, resources, etc.)
+   * Point out the use of [template functions](https://azure.microsoft.com/en-us/documentation/articles/resource-group-template-functions/)
+   * Code walk-through for generated PowerShell scripts
+
 
 ## Edit and Deploy Using PowerShell
 
@@ -43,4 +49,14 @@ If you are very familiar with PowerShell, you can do the following steps using t
 
 1. Open [Azure Quickstart Templates](https://github.com/Azure/azure-quickstart-templates/tree/master/) on GitHub.
 
-1. Take a look at Quickstart Template on GitHub.
+1. Take a look at Quickstart Templates on GitHub.
+
+   
+## Further Ideas
+
+If you have time left, you could additionally cover topics like:
+
+* Demonstrate ARM template support in Visual Studio
+* Create and deploy ARM template from scratch using Visual Studio project
+* Deploy ARM template using a PowerShell script
+* Deploy a more complex template from Azure Quickstarts
