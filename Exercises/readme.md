@@ -31,3 +31,22 @@ The sample also contains a simple Web UI that consumes the Web API mentioned abo
 * Every day consists of **four sessions**.
 * You can use one exercise per session. However, if you audience is especially initerested in certain topics, you can spend more time on certain exercises and keep the other ones shorter.
 
+## Suggested Session Plan
+
+Here is the suggested session plan. You can follow it or adapt it to your specific needs (e.g. usual start/end times in your region, different audience, venue restrictions, catering etc.):
+
+* Start: 9:00 AM
+* Session 1: 9:00 AM – 10:30 AM
+    * Welcome, introduction, organizational matters, brief overview of the workshop
+    * Check that everybody who wants to follow along has all prerequisites installed
+    * Demo/Exercise 1
+    * Close with tips from my practical work concerning the topics covered in exercise 1 
+* Session 2: 11:00 AM – 12:30 PM<br/>
+  (Structure of the following session are all like this one)
+    * Discuss open questions from session 1
+    * Exercise 2
+    * Close with tips from practical work concerning the topics covered in exercise 2 (show some real-world examples from projects the trainer did)
+* Session 3: 1:30 PM – 3:00 PM
+* Session 4: 3:30 PM – 5:00 PM
+* End approx. 5:00 PM
+* Day two follows the same pattern
