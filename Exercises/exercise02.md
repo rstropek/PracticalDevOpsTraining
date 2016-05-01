@@ -56,7 +56,7 @@
     ```
     # Set various names
     $resourceGroupName = "PracticalDevOps-Dev"
-    $storageAccountName = "book<yourname>dev"
+    $storageAccountName = "books<yourname>dev"
     $containerName = "booknametokens"
     $policyName = "BookNameTokens Policy 2"
 
