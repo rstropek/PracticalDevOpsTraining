@@ -20,7 +20,7 @@
 
 1. Remove generated `UnitTest1.cs`.
 
-1. Remove `ApplicationInsights.config` (not necessary for this demo).
+1. Switch to latest version of .NET (4.6.1) in the Books.Test project properties page just like you did for the Books project in exercise 1
 
 1. Add a reference to the Web API project from your new test project.<br/>
    ![Add reference](img/add-references-test-project.png)
