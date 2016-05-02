@@ -65,6 +65,8 @@
    
 1. Use an SSH Client (on Windows e.g. *PuTTY*) and connect to your new VM.
 
+1. All commands must be issued as root. run `sudo -s` to start a new shell as root
+
 1. Make sure that Docker is up and running using: `docker info`
 
 1. Clone the sample repository for this training: `git clone https://github.com/rstropek/PracticalDevOpsTraining.git`
