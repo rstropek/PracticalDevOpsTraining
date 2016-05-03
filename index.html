@@ -109,11 +109,11 @@
 
 					<ul>
 						<li>
-							Presentation (approx. 60%)<br/>
+							Presentation<br/>
 							<small>A few slides, focus on short demos</small>
 						</li>
 						<li>
-							Time for hands-on (approx. 40%)<br/>
+							Time for hands-on<br/>
 							<small>
 								Free-style or step-by-step, depending on your experience<br/>
 								<a href="https://github.com/rstropek/PracticalDevOpsTraining/tree/master/Exercises" target="_blank">Exercises</a>
@@ -142,19 +142,6 @@
 							Materials<br/>
 							<small><a href="https://github.com/rstropek/PracticalDevOpsTraining" target="_blank">Everything is available on GitHub</a></small>
 						</li>
-					</ul>
-				</section>
-
-
-				<section>
-
-					<p>General Prerequisites</p>
-
-					<ul>
-						<li>Visual Studio 2015 Update 2</li>
-						<li>Microsoft Azure Subscription (admin)</li>
-						<li>Visual Studio Team Services Subscription (admin)</li>
-						<li>Details will follow</li>
 					</ul>
 				</section>
 			</section>
@@ -192,6 +179,7 @@
 							<small>
 								<a href="https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx" target="_blank">Download</a>
 								- Community Ed. and Visual Studio Code are free, trial for Enterprise Ed. available<br/>
+								Note that we are going to use Enterprise Ed. features during the exercises<br/>
 								<a href="https://www.visualstudio.com/en-us/products/compare-visual-studio-2015-products-vs.aspx">Compare editions</a> 
 							</small>
 						</li>
@@ -200,6 +188,8 @@
 
 				<section>
 					<h2>Visual Studio on Azure</h2>
+
+					<p><small>You can use an Azure VM instead of installing Visual Studio locally</small></p>
 
 					<img src="img/azure-visual-studio-vms.png" />
 				</section>
@@ -217,7 +207,7 @@
 						<li><a href="http://aka.ms/webpi-azps/" target="_blank">Azure PowerShell</a></li>
 						<li><a href="http://www.putty.org/" target="_blank">PuTTY</a></li>
 						<li>Optionally: <a href="https://visualstudiogallery.msdn.microsoft.com/0f5b2caa-ea00-41c8-b8a2-058c7da0b3e4" target="_blank">VS 2015 Tools for Docker (Preview)</a></li>
-						<li>Optionally: <a href="https://www.docker.com/products/docker-toolbox" target="_blank">Docker Toolbox</a></li>
+						<li>Optionally: <a href="https://www.docker.com/products/docker-toolbox" target="_blank">Docker Toolbox</a> (you can use Azure instead)</li>
 					</ul>
 				</section>
 
@@ -285,7 +275,8 @@
 					<ul>
 						<li><a href="http://www.asp.net/aspnet/overview/owin-and-katana" target="_blank">OWIN and Katana</a></li>
 						<li><a href="https://www.nuget.org/" target="_blank">NuGet</a></li>
-						<li><a href="https://www.visualstudio.com/en-us/get-started/package/what-is-packaging" target="_blank">What is package management?</a>							(VSTS content)</li>
+						<li><a href="https://www.visualstudio.com/en-us/get-started/package/what-is-packaging" target="_blank">What is package management?</a> (VSTS content)</li>
+						<li><a href="https://docs.asp.net/en/latest/" target="_blank">ASP.NET Core 1.0 (Preview)</a></li>
 					</ul>
 				</section>
 			</section>
@@ -318,6 +309,10 @@
 						<li>
 							Manage Azure with PowerShell<br/>
 							<small>Automate administrative tasks</small>
+						</li>
+						<li>
+							Azure Storage Basics<br/>
+							<small>Shared Access Signatures</small>
 						</li>
 					</ul>
 				</section>
@@ -358,7 +353,7 @@
 							<small>Microsoft Fakes</small>
 						</li>
 						<li>
-							Self-host OWIN for automated tests
+							Self-hosted OWIN for automated tests
 						</li>
 					</ul>
 				</section>
@@ -369,9 +364,11 @@
 					<ul>
 						<li><a href="https://www.visualstudio.com/en-us/features/testing-tools-vs.aspx" target="_blank">Testing Tools and Services</a></li>
 						<li><a href="https://msdn.microsoft.com/en-us/library/hh549175.aspx" target="_blank">Isolating Code Under Test with Microsoft Fakes</a></li>
+						<li><a href="https://azure.microsoft.com/en-us/documentation/articles/devtest-lab-overview/" target="_blank">Azure DevTest Labs</li>
 					</ul>
 				</section>
 			</section>
+
 			<section>
 				<section data-state="title">
 					<h2><a href="https://github.com/rstropek/PracticalDevOpsTraining/blob/master/Exercises/exercise04.md" target="_blank">Exercise 4</a>: Application Insights</h2>
@@ -410,6 +407,180 @@
 
 					<ul>
 						<li><a href="https://azure.microsoft.com/en-us/services/application-insights/" target="_blank">Visual Studio Application Insights</a></li>
+						<li><a href="https://www.nuget.org/packages/Microsoft.ApplicationInsights.NLogTarget" target="_blank">Application Insights NLog Target</a></li>
+						<li><a href="https://www.nuget.org/packages/Microsoft.ApplicationInsights.Log4NetAppender/" target="_blank">Application Insights Log4Net Appender</a></li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section data-state="title">
+					<h2><a href="https://github.com/rstropek/PracticalDevOpsTraining/blob/master/Exercises/exercise05.md" target="_blank">Exercise 5</a>: Azure App Services</h2>
+
+					<p>
+						<small>
+							Creating, configuring, deploying and troubleshooting App Services Web Apps
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Learning</h2>
+
+					<ul>
+						<li>
+							What is Azure App Services?<br/>
+							<small>Why? Differences to VMs and Containers?</small>
+						</li>
+						<li>
+							Publishing Web Apps from Visual Studio
+							<small>Connecting Visual Studio, deployment with Web Deploy</small> 
+						</li>
+						<li>
+							Configuring App Services<br/>
+							<small>Deployment slots, slot settings</small>
+						</li>
+						<li>
+							Troubleshooting App Services<br/>
+							<small>Remote Debugging</small>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Resources</h2>
+
+					<ul>
+						<li><a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-value-prop-what-is/" target="_blank">What is Azure App Services?</a></li>
+						<li><a href="https://azure.microsoft.com/en-us/documentation/services/app-service/web/" target="_blank">Web Apps</a></li>
+						<li><a href="http://www.iis.net/downloads/microsoft/web-deploy" target="_blank">Web Deploy</a></li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section data-state="title">
+					<h2><a href="https://github.com/rstropek/PracticalDevOpsTraining/blob/master/Exercises/exercise06.md" target="_blank">Exercise 6</a>: VSTS</h2>
+
+					<p>
+						<small>
+							Continuous Deployment<br/>
+							Visual Studio Team Services
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Learning</h2>
+
+					<ul>
+						<li>
+							Visual Studio Team Services overview<br/>
+							<small>Focus on source code management, build, and release management</small>
+						</li>
+						<li>
+							Configuring automated build
+						</li>
+						<li>
+							Connecting VSTS and Azure<br/>
+							<small>Service endpoints</small>
+						</li>
+						<li>
+							Configuring release management
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Resources</h2>
+
+					<ul>
+						<li><a href="https://www.visualstudio.com/products/visual-studio-team-services-vs" target="_blank">Visual Studio Team Services</a></li>
+						<li><a href="https://www.visualstudio.com/get-started/overview-of-get-started-tasks-vs" target="_blank">Getting started</a> (link to important chapters in VSTS docs)</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section data-state="title">
+					<h2><a href="https://github.com/rstropek/PracticalDevOpsTraining/blob/master/Exercises/exercise07.md" target="_blank">Exercise 7</a>: ARM</h2>
+
+					<p>
+						<small>
+							Azure Resource Manager<br/>
+							ARM Templates
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Learning</h2>
+
+					<ul>
+						<li>
+							ARM Introduction<br/>
+							<small>What is it used for? What features does it offer?</small>
+						</li>
+						<li>
+							ARM Templates<br/>
+							<small>Creating resources with ARM templates</small>
+						</li>
+						<li>
+							Tips for ARM Template creation and management<br/>
+							<small>Visual Studio integration, Quickstarts</small>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Resources</h2>
+
+					<ul>
+						<li><a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/" target="_blank">Azure Resource Manager overview</a></li>
+						<li><a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-authoring-templates/" target="_blank">Authoring ARM Templates</a></li>
+						<li><a href="https://github.com/Azure/azure-quickstart-templates" target="_blank">Azure Quickstart Templates</a></li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section data-state="title">
+					<h2><a href="https://github.com/rstropek/PracticalDevOpsTraining/blob/master/Exercises/exercise08.md" target="_blank">Exercise 8</a>: Cross-Platform</h2>
+
+					<p>
+						<small>
+							ASP.NET Core 1.0<br/>
+							Docker Containers
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Learning</h2>
+
+					<ul>
+						<li>
+							ASP.NET Core 1.0<br/>
+							<small>What has changed?</small>
+						</li>
+						<li>
+							Open Source tools in Visual Studio<br/>
+							<small>Grunt, Gulp & Co.</small>
+						</li>
+						<li>
+							Using Docker Containers<br/>
+							<small>Docker and Microsoft, Docker in Azure, Docker and .NET</small>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Resources</h2>
+
+					<ul>
+						<li><a href="https://docs.asp.net/en/latest/" target="_blank">ASP.NET Core 1.0 Docs</a></li>
+						<li><a href="https://dotnet.github.io/" target="_blank">.NET Core</a></li>
+						<li><a href="https://www.docker.com/" target="_blank">Docker</a></li>
 					</ul>
 				</section>
 			</section>
