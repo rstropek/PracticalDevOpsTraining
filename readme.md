@@ -11,6 +11,8 @@ This repository and its content has been created for the training "Practical Dev
 
 **You find the exercises of the training in the [Exercises](Exercises) folder.**
 
+The training outline is available in [Excel](DevOpsPartnerTrainingOutline.xlsx) and [PDF](DevOpsPartnerTrainingOutline.pdf).
+
 Slides and exercises are currently still work in progress.
 
 
