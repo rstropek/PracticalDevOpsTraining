@@ -12,11 +12,32 @@ using System.ComponentModel.Composition.Registration;
 using System.Configuration;
 using System.Reflection;
 using System.Web.Http;
+using System.Web.Http.ExceptionHandling;
 
 namespace Books
 {
     public class Startup
     {
+        /// <summary>
+        /// Helper class to log uncaught exception to application insights
+        /// </summary>
+        /// <remarks>
+        /// For details see http://blogs.msdn.com/b/visualstudioalm/archive/2014/12/12/application-insights-exception-telemetry.aspx
+        /// </remarks>
+        private class AiExceptionLogger : ExceptionLogger
+        {
+            public override void Log(ExceptionLoggerContext context)
+            {
+                if (context != null && context.Exception != null)
+                {
+                    var ai = new TelemetryClient();
+                    ai.TrackException(context.Exception);
+                }
+
+                base.Log(context);
+            }
+        }
+
         public void Configuration(IAppBuilder app)
         {
             TelemetryConfiguration.Active.InstrumentationKey = ConfigurationManager.AppSettings["InstrumentationKey"];
@@ -32,6 +53,7 @@ namespace Books
                 new CamelCasePropertyNamesContractResolver();
             configuration.DependencyResolver = 
                 new MefDependencyResolver(this.CreateCompositionContainer());
+            configuration.Services.Add(typeof(IExceptionLogger), new AiExceptionLogger());
             app.UseWebApi(configuration);
         }
 

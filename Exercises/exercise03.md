@@ -6,6 +6,7 @@
 1. Basics about test projects
 1. Mocking dependencies using *Fakes*
 1. Hosting Web API in tests using OWIN
+1. Creating an automated Web Test
 
 
 ## Add Test Project
@@ -70,11 +71,81 @@
 1. Open Visual Studio's *Test Explorer* and run all tests.<br/>
    ![Test Explorer](img/visual-studio-test-explorer.png)
 
+
+## Add Web Test
+
+1. **Discussion points:**
+   * Describe different type of web testing (e.g. API testing, end-to-end testing)
+   * Mention and describe other important web test tools (e.g. [Protractor](http://angular.github.io/protractor/#/) for AngularJS, [Selenium](http://www.seleniumhq.org/) for browser automation) and their integration in Visual Studio (e.g. blog article [Getting Started with Selenium Testing in a Continuous Integration Pipeline with Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/01/27/getting-started-with-selenium-testing-in-a-continuous-integration-pipeline-with-visual-studio/))
+   * Short introduction to Visual Studio Web Tests
+
+1. Add a new *Web Performance and Load Test Project*.<br/>
+   ![Add Web Test Project](img/visual-studio-add-web-test.png)
+
+1. Rename test to `GetBooksTest`<br/>
+   ![Rename test](img/rename-getbookstest.png)
+
+1. Add web request to our *Get Books* Web API.<br/>
+   ![Add request to Web Test](img/add-request-to-web-test.png)
+
+1. **Discussion points:**
+   * Describe other capabilities of Visual Studio Web Tests (e.g. loops, conditions, data-driven tests, parameters)
+
+1. Open the request's properties and change the URL appropriately.<br/>
+   ![Change URL in request's properties](img/request-test-properties.png)
+
+1. **Discussion points:**
+   * Describe other request properties offered by Visual Studio
+
+1. Parameterize web server. This is important if you have lots of requests. With parameters, tests become much easier to maintain.<br/>
+   ![Parameterize Web Server](img/parameterize-web-server.png)
+
+1. Make yourself familiar with the web test after server parameterization.<br/>
+   ![Test after parameterization](img/parameterized-web-server.png)
+
+1. **Discussion points:**
+   * Describe other request properties offered by Visual Studio
+   * Describe validation rules
    
+1. Start an instance of your OWIN web server (press *Ctrl+F5* to start it without debugger).
+
+1. Run the web test.<br/>
+   ![Run web test](img/run-test.png)
+   
+1. Verify that test was successful.<br/>
+   ![Verify test results](img/test-results.png)
+
+
+## Add Load Test
+
+1. **Discussion points:**
+   * Discuss the importance of load testing
+   * General overview over Visual Studio load testing capabilities
+
+1. Add load test to web test project.<br/>
+   ![Add load test](img/add-load-test.png)
+
+1. Select the following test settings (select default values for settings not mentioned here):
+   * Select *On-premise Load Test* (we will move to the cloud later)
+   * 100 test iterations
+   * 5 seconds sampling rate
+   * Constant load of 10 users
+   * Add the `GetBooksTest` to the load test
+
+1. **Discussion points:**
+   * Describe other capabilities of Visual Studio load testing
+
+1. Run load test.<br/>
+   ![Run load test](img/run-load-test.png)
+
+1. Analyze load test results.<br/>
+   ![Analyze results](img/analyze-load-test-results.png)
+
+
 ## Further Ideas
 
 If you have time left, you could additionally cover topics like:
 
-* Create a Visual Studio web and load test for our Web API
-* Run the load test locally and in the cloud
+* Create [custom validation rule](https://msdn.microsoft.com/en-us/library/ms182556.aspx)
+* Use web UI from final sample code to demo HTML-related web test features
 * (Not recommended but possible if you have a very web-development-oriented audience) Add a Jasmine unit test for Angular client
