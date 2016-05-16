@@ -16,7 +16,7 @@
    * If some attendees are completely new to Azure, demonstrate the features of the portal
    * Talk about security aspects of Azure administration
 
-1. Create a new *Resource group* named `PracticalDevOps-Dev`
+1. Create a new *Resource group* named `PracticalDevOpsDev`
 
 1. **Discussion points:**
    * Describe the importance of resource groups
