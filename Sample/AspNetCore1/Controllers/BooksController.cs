@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNet.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using AspNetCore1Angular2Intro.Models;
 using AspNetCore1Angular2Intro.Services;
-using Microsoft.Extensions.OptionsModel;
+using Microsoft.Extensions.Options;
 using System;
 using Microsoft.Extensions.Logging;
 
@@ -49,7 +49,7 @@ rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor 
         public IActionResult Post(Book newBook)
         {
             this.logger.LogError("Illegal POST!");
-            return new HttpStatusCodeResult(500);
+            return new StatusCodeResult(500);
         }
     }
 }
