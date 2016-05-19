@@ -34,18 +34,16 @@
 1. Open a developer command prompt and navigate to the directory `Sample/AspNetCore1`.
 
 1. **Discussion points:**
-   * Describe basics of ASP.NET Core 1.0 tools like `dnvm`, `dnu`, and `dnx`
-   * Speak about upcoming changes in the next RC (`dotnet` CLI)
+   * Describe basics of [ASP.NET Core 1.0 CLI](https://github.com/dotnet/cli/blob/rel/1.0.0/Documentation/intro-to-cli.md)
+   * Speak about [changes from RC1 to RC2](http://dotnet.github.io/docs/core-concepts/dnx-migration.html) (see also blog article from [Shawn Wildermuth](https://wildermuth.com/2016/05/17/Converting-an-ASP-NET-Core-RC1-Project-to-RC2))
 
-1. Run `dnvm install 1.0.0-rc1-update1 -r coreclr -arch x64` to make sure CoreCLR is installed on your computer.
+1. Run `dotnet --help` to make sure ASP.NET Core 1.0 RC2 is installed on your computer.
 
-1. Run `dnvm use 1.0.0-rc1-update1 -r coreclr -arch x64` to select CoreCLR.
-
-1. Run `dnu restore` to restore necessary packages from NuGet.
+1. Run `dotnet restore` to restore necessary packages from NuGet.
 
 1. Run `npm install` to restore necessary NPM packages.
 
-1. Run `dnx web` to start your web app using the cross-platform Kestrel web server.<br/>
+1. Run `dotnet run` to start your web app using the cross-platform Kestrel web server.<br/>
    ![Run Kestrel](img/run-kestrel.png)
 
 1. **Discussion points:**
@@ -69,18 +67,18 @@
 
 1. Clone the sample repository for this training: `git clone https://github.com/rstropek/PracticalDevOpsTraining.git`
 
-1. Get Microsoft's Docker image for ASP.NET Core: `docker pull microsoft/aspnet` 
+1. Get Microsoft's Docker image for ASP.NET Core: `docker pull microsoft/dotnet:latest` 
 
-1. Start a new interactive Docker container: `docker run -it -p 5000:5000 -v ~/PracticalDevOpsTraining/Sample/AspNetCore1:/src microsoft/aspnet /bin/bash`
+1. Start a new interactive Docker container: `docker run -it -p 5000:5000 -v ~/PracticalDevOpsTraining/Sample/AspNetCore1:/src microsoft/dotnet:latest /bin/bash`
 
 1. **Discussion points:**
    * Describe concept of volume mappings (`-v`) and port mappings (`-p`)
 
 1. Inside of the Docker container, navigate to the mounted `src` folder: `cd src`
 
-1. Restore NuGet packages: `dnu restore`
+1. Restore NuGet packages: `dotnet restore`
 
-1. Run our sample in the Docker container: `dnx web`
+1. Run our sample in the Docker container: `dotnet run`
 
 1. If you want to try calling our Web API using your browser, don't forget to open port 5000 for your Docker VM.<br/>
    ![Open Port](img/azure-open-vm-ports.png)
