@@ -57,11 +57,10 @@
 1. **Discussion points:**
    * Short introduction into Docker's basic concepts
    * Speak about differences to virtual machines
-
-1. Add a *Docker on Ubuntu* VM to your resource group.<br/>
-   ![Docker on Ubuntu](img/create-docker-vm.png)
+   * Point out that this exercise uses the Docker host created in the [previous exercise](exercise07.md) 
    
-1. Use an SSH Client (on Windows e.g. *PuTTY*) and connect to your new VM.
+1. Use an SSH Client (on Windows e.g. *PuTTY*) and connect to your the VM you created in [exercise 7](exercise07.md).<br/>
+   ![VM DNS name](img/vm-dns-name.png)
 
 1. Make sure that Docker is up and running using: `docker info`
 
@@ -69,7 +68,7 @@
 
 1. Get Microsoft's Docker image for ASP.NET Core: `docker pull microsoft/dotnet:latest` 
 
-1. Start a new interactive Docker container: `docker run -it -p 5000:5000 -v ~/PracticalDevOpsTraining/Sample/AspNetCore1:/src microsoft/dotnet:latest /bin/bash`
+1. Start a new interactive Docker container: `docker run -it -p 5000:5000 -v ~/PracticalDevOpsTraining/Sample/AspNetCore1:/src microsoft/dotnet:latest /bin/bash`. This command might take some moments if you run it for the first time. Subsequent calls should be much faster.
 
 1. **Discussion points:**
    * Describe concept of volume mappings (`-v`) and port mappings (`-p`)
@@ -80,10 +79,11 @@
 
 1. Run our sample in the Docker container: `dotnet run`
 
-1. If you want to try calling our Web API using your browser, don't forget to open port 5000 for your Docker VM.<br/>
-   ![Open Port](img/azure-open-vm-ports.png)
-
 1. In your browser, open `http://yourvmname.cloudapp.net:5000/api/books`.
+
+1. Once you are done, exit from your Docker container using `exit`.
+
+1. Look for the container using `docker ps -a`. It should not be stopped. Delete your container using `docker rm`.
 
 
 ## Create Docker Image for Web App
@@ -101,8 +101,5 @@
 1. Run container from image: `docker run -d -p 5000:5000 myaspnet`
 
 1. Use `docker ps` and `docker logs` to make sure your container is up and running.
-
-1. If you want to try calling our Web API using your browser, don't forget to open port 5000 for your Docker VM.<br/>
-   ![Open Port](img/azure-open-vm-ports.png)
 
 1. In your browser, open `http://yourvmname.cloudapp.net:5000/api/books`.

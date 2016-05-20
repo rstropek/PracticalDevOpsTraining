@@ -7,6 +7,7 @@
 1. Exporting ARM Templates
 1. Downloading ARM Templates
 1. Editing and deploying ARM Templates in the Azure Portal
+1. Deploying a VM using an Azure ARM Quickstart
 
 
 ## Export Template
@@ -45,11 +46,27 @@ If you are very familiar with PowerShell, you can do the following steps using t
    ![Deploy Template](img/azure-deploy-template.png)
    
 
-## Use Template from GitHub
+## Use ARM Quickstart Template from GitHub
 
 1. Open [Azure Quickstart Templates](https://github.com/Azure/azure-quickstart-templates/tree/master/) on GitHub.
 
-1. Take a look at Quickstart Templates on GitHub.
+1. Take a look at Quickstart Templates on GitHub. In particular, look for the `docker-simple-on-ubuntu` template ([link](https://github.com/Azure/azure-quickstart-templates/tree/master/docker-simple-on-ubuntu)).
+
+1. Take a look at the UI for the Quickstart Templates [in the Azure Portal](https://azure.microsoft.com/en-us/documentation/templates/). Again, look for the *Deploy an Ubuntu VM with Docker Engine* template ([link](https://azure.microsoft.com/en-us/documentation/templates/docker-simple-on-ubuntu/)). 
+
+1. **Discussion points:**
+   * Why are the Quickstart Templates so useful?
+   * Describe different ways of deploying them (PowerShell, using the embedded *Deploy to Azure* button)
+   * How does the *Deploy to Azure* mechanism work?
+
+1. In the next example, we are going to need a [Docker](https://www.docker.com/) host. Use the button *Deploy to Azure* in the [Quickstart Template](https://github.com/Azure/azure-quickstart-templates/tree/master/docker-simple-on-ubuntu) to deploy a Docker host in your Azure subscription.<br/>
+   ![Deploy to Azure](img/deploy-to-azure.png)
+
+1. Use the following settings when deploying the Docker host (note that you have to choose your own unique names for storage account and DNS name):<br/>
+   ![Deploy to Azure settings](img/deploy-to-azure-settings.png)
+
+1. Make sure that your deployment was successful. If it was, you are prepared for the next exercise.<br/>
+   ![Deployment successful](img/deployment-successful.png)
 
    
 ## Further Ideas
