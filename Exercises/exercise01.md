@@ -3,16 +3,17 @@
 
 ## Learnings
 
-1. How to create a RESTful Web API project with OWIN from scratch
-1. Understand the importance of NuGet (will become even more important with .NET Core)
-1. Learn very basics about ASP.NET Web API development (this will not be a deep dive as we focus on DevOps, not just Dev) 
+1. Adding your code to source control
+2. How to create a RESTful Web API project with OWIN from scratch
+3. Understand the importance of NuGet (will become even more important with .NET Core)
+4. Learn very basics about ASP.NET Web API development (this will not be a deep dive as we focus on DevOps, not just Dev) 
 
 
 ## Creating Project in Visual Studio
 
 1. Start Visual Studio
 
-1. Create a new web project. **Disable** Application Insights for now. We will add Application Insights later.<br/> 
+1. Create a new web project. **Disable** Application Insights for now. We will add Application Insights later. <br/>
    ![New Web Project in VS](img/visual-studio-new-web-project.png)
 
 1. Use the **ASP.NET 4.5.2 "Empty" Template**:<br/>
