@@ -1,4 +1,4 @@
-# Exercise 6
+# Exercise 2 Build, Version & Deploy
 
 
 ## Learnings
