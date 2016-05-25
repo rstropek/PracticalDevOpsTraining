@@ -5,6 +5,8 @@
 
 1. Setting up automated build
 1. Connecting VSTS and Azure
+2. Versioning your code
+2. Deploying to your Development Location
 
 ## Setup Build
 
