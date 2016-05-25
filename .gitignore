@@ -234,3 +234,23 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+/Sample/AspNetCore1/typings/main.d.ts
+/Sample/AspNetCore1/typings/main/definitions/gulp/gulp.d.ts
+/Sample/AspNetCore1/typings/main/ambient/node/node.d.ts
+/Sample/AspNetCore1/typings/main/ambient/minimatch/minimatch.d.ts
+/Sample/AspNetCore1/typings/main/ambient/gulp-typescript/gulp-typescript.d.ts
+/Sample/AspNetCore1/typings/main/ambient/gulp-sourcemaps/gulp-sourcemaps.d.ts
+/Sample/AspNetCore1/typings/main/ambient/gulp-concat/gulp-concat.d.ts
+/Sample/AspNetCore1/typings/main/ambient/glob/glob.d.ts
+/Sample/AspNetCore1/typings/main/ambient/es6-shim/es6-shim.d.ts
+/Sample/AspNetCore1/typings/main/ambient/del/del.d.ts
+/Sample/AspNetCore1/typings/browser.d.ts
+/Sample/AspNetCore1/typings/browser/definitions/gulp/gulp.d.ts
+/Sample/AspNetCore1/typings/browser/ambient/node/node.d.ts
+/Sample/AspNetCore1/typings/browser/ambient/minimatch/minimatch.d.ts
+/Sample/AspNetCore1/typings/browser/ambient/gulp-typescript/gulp-typescript.d.ts
+/Sample/AspNetCore1/typings/browser/ambient/gulp-sourcemaps/gulp-sourcemaps.d.ts
+/Sample/AspNetCore1/typings/browser/ambient/gulp-concat/gulp-concat.d.ts
+/Sample/AspNetCore1/typings/browser/ambient/glob/glob.d.ts
+/Sample/AspNetCore1/typings/browser/ambient/es6-shim/es6-shim.d.ts
+/Sample/AspNetCore1/typings/browser/ambient/del/del.d.ts
