@@ -36,7 +36,48 @@
    ![Build results](img/vsts-build-results.png)^
    
 1. For testing purposes, screw up tests (e.g. by removing the `Ignore` attribute from test `IgnoredTest`), check your changes in, and see the build failing. Remember to fix your code again so that you can continue with the rest of the exercise.
+
+## Setup Versioning of your application using GitVersion
+
+1. Use the Extension manager to find the "Git Version" extension
+
+1. If it is not already installed then install it
+
+1. Add the GitVersion Task to your Build
+
+1. Change the "Build Number format" on the "General" tab to be `$(Build.DefinitionName)_$(GITVERSION_FullSemVer)`
+
+1. Run another build
+
+## Further Ideas
+
+If you have time left, you could additionally cover topics like:
+
+* How to bump version numbers
+* How to version unsupported file types
+* Read http://gitversion.readthedocs.io 
+
+## Setup CD to Azure
+
+1. In VSTS project options, goto *Services* area. Add a service endpoint for Azure<br/>
+   ![VSTS Services](img/vsts-connect-azure.png)
+
+1. Select *Certificate Based* and follow the link *download publish settings file*. Open the publish settings file and copy the required data into VSTS.
+
+1. **Discussion points:**
+   * Point out security-related issues with handling publish settings files (again)
+
+1. In build results, follow the link to create a release.<br/>
+   ![Create release](img/vsts-setup-release.png)
+
+1. **Discussion points:**
+   * Describe concepts of VSTS
+   * Overview about additional steps that would be possible
    
+1. Setup deployment to Azure Web App.<br/>
+   ![Azure Web App Deployment](img/vsts-azure-web-app-deployment.png)
+
+1. Now you can test the CD process. Change someting in your code (e.g. appending a `!` to the title) and check your code in. The build should be triggered automatically. The deployment should be created after the successful build. The new version should be immediately published to Azure App Services.
 
 ## Further Ideas
 
