@@ -120,16 +120,12 @@
 
 ## Update and Run Web Test against Azure
 
-1. Open the web test created in [exercise 3](exercise03.md).
+1. Open the web test created in [exercise 2](exercise02-build-version-deploy.md).
 
 1. Change web server to deployment in the cloud.<br/>
    ![Change web server URL](img/change-to-cloud-server.png)
    
 1. Run web test to see if it succeeds for deployed version.
-
-1. Open the load test created in [exercise 3](exercise03.md).
-
-1. Run load test to see performance for deployed version.
 
 1. **Commit** your code to your local Git Repository.
 
