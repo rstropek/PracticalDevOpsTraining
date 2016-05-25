@@ -71,6 +71,7 @@
 1. Open Visual Studio's *Test Explorer* and run all tests.<br/>
    ![Test Explorer](img/visual-studio-test-explorer.png)
 
+1. **Commit and Push your code to VSTS**.
 
 ## Add Web Test
 
