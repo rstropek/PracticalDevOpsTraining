@@ -1,4 +1,4 @@
-# Exercise 2 Build, Version & Deploy
+# Exercise 2 Build, Version, Deploy, & Debug
 
 
 ## Learnings
@@ -7,6 +7,9 @@
 1. Connecting VSTS and Azure
 2. Versioning your code
 2. Deploying to your Development Location
+1. Basic configuration (here: enable remote debugging) of web apps
+1. Connecting to Azure using Visual Studio Server Explorer
+1. Remote debugging of web apps
 
 ## Setup Build
 
@@ -80,6 +83,31 @@ If you have time left, you could additionally cover topics like:
    ![Azure Web App Deployment](img/vsts-azure-web-app-deployment.png)
 
 1. Now you can test the CD process. Change someting in your code (e.g. appending a `!` to the title) and check your code in. The build should be triggered automatically. The deployment should be created after the successful build. The new version should be immediately published to Azure App Services.
+
+## Remote Debugging
+
+1. **Discussion points:**
+   * Troubleshooting options for Web Apps
+
+1. Enable remote debugging for your web app in the Azure portal.<br/>
+   ![Enable Remote Debugging](img/enable-remote-debugging.png)
+
+1. Open Visual Studio's *Server Explorer* and attach a debugger to your deployed web app. This operation may take a few moments.<br/>
+   ![Attach Debugger](img/attach-debugger-server-explorer.png)
+
+1. Open `Controllers/BooksController.cs` and set a breakpoint (F9) to the first line of the `Get` method. This operation may take a few moments.
+
+1. Open `http://practicaldevops-dev.azurewebsites.net/api/books` in a browser and note how you can debug the deployed version of your web app with your local Visual Studio.
+
+   
+## Further Ideas
+
+If you have time left, you could additionally cover topics like:
+
+* Show Kudu *scm* service at `https://<sitename>.scm.azurewebsites.net/`
+* Show FTP access to Web Apps (e.g. for downloading logs)
+* Show Visual Studio Online for interactive access to Web App content
+* Demonstrate deployment slots and VIP swaps
 
 ## Further Ideas
 
