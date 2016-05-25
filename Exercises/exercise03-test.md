@@ -36,6 +36,7 @@
    * `Install-Package Microsoft.Owin.Host.SystemWeb -Project Books.Test`
    * `Install-Package Microsoft.AspNet.WebApi.OwinSelfHost -Project Books.Test`
 
+1. **Commit** your code to your local Git Repository.
 
 ## Add and Run Tests
 
