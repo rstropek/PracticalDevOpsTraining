@@ -13,8 +13,11 @@
 
 1. Start Visual Studio
 
-1. Create a new web project. **Disable** Application Insights for now. We will add Application Insights later. <br/>
-   ![New Web Project in VS](img/visual-studio-new-web-project.png)
+1. Connect to http://practicaldevops.visualstudio.com in Team Explorer and select the Team Project of the name [location]-team-[yourTeamName].<br/>![Connect to VSTS](img/practicaldevops-connect-vsts.png)
+
+1. Clone the repository to your local disk<br />![Clone the Repository](img/practicaldevops-clone-repository.png)
+
+1. Create a new web project. **Disable** Application Insights for now. We will add Application Insights later. <br/>![New Web Project in VS](img/practicaldevops-create-empty-web-project.png)
 
 1. Use the **ASP.NET 4.5.2 "Empty" Template**:<br/>
    ![New Web Project in VS](img/visual-studio-new-web-project-02.png)
@@ -98,6 +101,9 @@
 1. Run your program and try the URL `http://localhost:2690/api/books` (this assumes that your app runs on port 2690; you have to replace this port with the port that your Visual Studio has chosen).
 
 1. Refresh the URL mentioned above multiple times. Note how random books with random names are generated.
+
+1. Push the new web project to your Git repository in TFVC<br />
+   ![Add References](img/practicaldevops-commit-and-push-web-project.png)
 
 1. **Discussion points:**
    * (Option if you have some Devs in the audience) Debug the application to give attendees a deeper insight into the structure of the application
