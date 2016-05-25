@@ -71,7 +71,7 @@
 1. Open Visual Studio's *Test Explorer* and run all tests.<br/>
    ![Test Explorer](img/visual-studio-test-explorer.png)
 
-1. **Commit and Push your code to VSTS**.
+1. **Commit** your code to your local Git Repository.
 
 ## Add Web Test
 
@@ -116,6 +116,7 @@
 1. Verify that test was successful.<br/>
    ![Verify test results](img/test-results.png)
 
+1. **Commit** your code to your local Git Repository.
 
 ## Add Load Test
 
@@ -142,6 +143,9 @@
 1. Analyze load test results.<br/>
    ![Analyze results](img/analyze-load-test-results.png)
 
+1. **Commit** your code to your local Git Repository.
+
+1. **Push** your code to VSTS.
 
 ## Further Ideas
 
