@@ -76,10 +76,10 @@ If you have time left, you could additionally cover topics like:
    * Describe concepts of VSTS
    * Overview about additional steps that would be possible
    
-1. Setup deployment to Azure Web App.<br/>
+1. Setup deployment to Azure Web App.Use `$(build.artifactstagingdirectory)\**\*.zip`<br/>
    ![Azure Web App Deployment](img/vsts-azure-web-app-deployment.png)
 
-1. Now you can test the CD process. Change someting in your code (e.g. appending a `!` to the title) and check your code in. The build should be triggered automatically. The deployment should be created after the successful build. The new version should be immediately published to Azure App Services.
+1. Now you can test the CD process. Change someting in your code (e.g. appending a `!` to the title) and check your code in. The build should be triggered automatically. The deployment should be created after the successful build. The new version should be immediately published to Azure App Services. 
 
 ## Remote Debugging
 
