@@ -5,6 +5,8 @@
 
 The exercises are used to show different aspects of Microsoft Azure and Visual Studio that are relevant for DevOps. The goal is to have a consistent sample that attendees can build step by step. The sample is simple so that everybody can follow. However, it contains some requirements and implementation details that are typical for real-world web applications.
 
+Note that [Martin Hinshelwood](https://nkdagility.com/company/about-martin-hinshelwood/) has created a modified version based on this training. His version starts with VSTS and Continuous Integration/Delivery from the beginning instead of adding it in exercise 6. You can find this variant of the training [in his GitHub repository](https://github.com/nkdAgility/Practical-DevOps-Workshop).
+
 
 ## Goal of the Sample
 
