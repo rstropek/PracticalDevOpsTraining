@@ -72,9 +72,6 @@ If you have time left, you could additionally cover topics like:
 1. **Discussion points:**
    * Point out security-related issues with handling publish settings files (again)
 
-1. In build results, follow the link to create a release.<br/>
-   ![Create release](img/vsts-setup-release.png)
-
 1. **Discussion points:**
    * Describe concepts of VSTS
    * Overview about additional steps that would be possible
