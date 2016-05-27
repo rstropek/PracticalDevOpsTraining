@@ -15,6 +15,7 @@ The training outline is available in [Excel](DevOpsPartnerTrainingOutline.xlsx) 
 
 Slides and exercises are currently still work in progress.
 
+**You will be asked to access your Team Project in: [https://practicaldevops.visualstudio.com](https://practicaldevops.visualstudio.com)**
 
 ## Training Content
 
