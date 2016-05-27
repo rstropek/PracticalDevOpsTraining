@@ -9,7 +9,7 @@
 4. Learn very basics about ASP.NET Web API development (this will not be a deep dive as we focus on DevOps, not just Dev) 
 
 
-## Creating Project in Visual Studio
+## Creating Project in Visual Studio [Back to Lab 01](../../lab-01.md)
 
 1. Create a new web project. **Disable** Application Insights for now. We will add Application Insights later. <br/>![New Web Project in VS](../../img/practicaldevops-create-empty-web-project.png)
 
