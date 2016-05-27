@@ -1,4 +1,4 @@
-# Lab 01 - Code and Commit ASP.NET
+# Lab 01 - Code ASP.NET
 
 
 ## Learnings
