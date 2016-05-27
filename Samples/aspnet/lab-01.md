@@ -37,7 +37,7 @@
    * nuget.org vs. private feeds in the cloud (e.g. myget) vs. private feeds on-premise
 
 1. Add an OWIN Startup Class:<br/>
-   ![Add OWIN Startup Class](img/create-startup-class.png)
+   ![Add OWIN Startup Class](../../img/create-startup-class.png)
 
 1. Replace the `Configuration` method with the following sample code.
    ```
@@ -100,10 +100,10 @@
    * (Option if you have some Devs in the audience) Debug the application to give attendees a deeper insight into the structure of the application
 
 1. *Postman* is a very handy tool for testing Web APIs. You can get it here: [Postman on Chrome Web Store](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop). Install *Postman* and try the Web API.<br/>
-   ![Postman](img/postman.png)
+   ![Postman](../../img/postman.png)
    
    
-## Further Ideas
+## Further
 
 If you have time left, you could additionally cover topics like:
 
