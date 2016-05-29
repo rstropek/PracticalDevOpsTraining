@@ -12,7 +12,7 @@
 
 ## ASP.NET Core 1 Web App in Visual Studio 2015
 
-1. Open [Sample/AspNetCore1.sln](../Sample/) in Visual Studio 2015.
+1. Open [Samples/aspnet-core/src/AspNetCore1.sln](/Samples/aspnet-core/src/) in Visual Studio 2015.
 
 1. Build the solution and make sure that there are no errors.
 
@@ -26,12 +26,12 @@
    * Code walk-through for Angular 2.0 code 
 
 1. Use Visual Studio's *Task Runner* to run Gulp task `default`.<br/>
-   ![Task Runner](img/visual-studio-run-gulp.png)
+   ![Task Runner](/img/visual-studio-run-gulp.png)
 
 
 ## Run ASP.NET Core 1 with Kestrel
 
-1. Open a developer command prompt and navigate to the directory `Sample/AspNetCore1`.
+1. Open a developer command prompt and navigate to the directory `Samples/aspnet-core/src/AspNetCore1`.
 
 1. **Discussion points:**
    * Describe basics of ASP.NET Core 1.0 tools like `dnvm`, `dnu`, and `dnx`
@@ -46,7 +46,7 @@
 1. Run `npm install` to restore necessary NPM packages.
 
 1. Run `dnx web` to start your web app using the cross-platform Kestrel web server.<br/>
-   ![Run Kestrel](img/run-kestrel.png)
+   ![Run Kestrel](/img/run-kestrel.png)
 
 1. **Discussion points:**
    * Relation of Kestrel and IIS on Windows
@@ -61,17 +61,17 @@
    * Speak about differences to virtual machines
 
 1. Add a *Docker on Ubuntu* VM to your resource group.<br/>
-   ![Docker on Ubuntu](img/create-docker-vm.png)
+   ![Docker on Ubuntu](/img/create-docker-vm.png)
    
 1. Use an SSH Client (on Windows e.g. *PuTTY*) and connect to your new VM.
 
 1. Make sure that Docker is up and running using: `docker info`
 
-1. Clone the sample repository for this training: `git clone https://github.com/rstropek/PracticalDevOpsTraining.git`
+1. Clone the sample repository for this training: `git clonehttps://github.com/nkdAgility/Practical-DevOps-Workshop.git`
 
 1. Get Microsoft's Docker image for ASP.NET Core: `docker pull microsoft/aspnet` 
 
-1. Start a new interactive Docker container: `docker run -it -p 5000:5000 -v ~/PracticalDevOpsTraining/Sample/AspNetCore1:/src microsoft/aspnet /bin/bash`
+1. Start a new interactive Docker container: `docker run -it -p 5000:5000 -v ~/Practical-DevOps-Workshop/Samples/aspnet-core/src/AspNetCore1:/src microsoft/aspnet /bin/bash`
 
 1. **Discussion points:**
    * Describe concept of volume mappings (`-v`) and port mappings (`-p`)
@@ -83,7 +83,7 @@
 1. Run our sample in the Docker container: `dnx web`
 
 1. If you want to try calling our Web API using your browser, don't forget to open port 5000 for your Docker VM.<br/>
-   ![Open Port](img/azure-open-vm-ports.png)
+   ![Open Port](/img/azure-open-vm-ports.png)
 
 1. In your browser, open `http://yourvmname.cloudapp.net:5000/api/books`.
 
@@ -105,6 +105,6 @@
 1. Use `docker ps` and `docker logs` to make sure your container is up and running.
 
 1. If you want to try calling our Web API using your browser, don't forget to open port 5000 for your Docker VM.<br/>
-   ![Open Port](img/azure-open-vm-ports.png)
+   ![Open Port](/img/azure-open-vm-ports.png)
 
 1. In your browser, open `http://yourvmname.cloudapp.net:5000/api/books`.
