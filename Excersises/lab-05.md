@@ -30,17 +30,17 @@
    * Short introduction into the features of blob storage (access via HTTPS, redunancy options, account name/key, private vs. public containers, etc.)
 
 1. In Visual Studio, add your Azure account to your profile.<br/>
-   ![Edit profile](img/visual-studio-add-subscription.png)
+   ![Edit profile](/img/visual-studio-add-subscription.png)
 
 1. Use *Cloud Explorer* in Visual Studio to connect to your storage account.<br/>
-   ![Cloud Explorer](img/visual-studio-cloud-explorer.png)
+   ![Cloud Explorer](/img/visual-studio-cloud-explorer.png)
 
 1. Use *Cloud Explorer* to create a new Blob Container named `booknametokens`.
 
-1. Upload [BookNameTokens.txt](Assets/Exercise-2-Book-Name-Tokens/BookNameTokens.txt) into the new container.
+1. Upload [BookNameTokens.txt](/Samples/aspnet/assets/Exercise-2-Book-Name-Tokens/BookNameTokens.txt) into the new container.
 
 1. Copy blob URL using *Cloud Explorer*.<br/>
-   ![Copy Blob URL](img/copy-blob-url.png)
+   ![Copy Blob URL](/img/copy-blob-url.png)
 
 1. Try to open blob using a browser. It must not work as the blob is private!
 
@@ -93,7 +93,7 @@
    * Structure of a SAS
 
 1. Copy blob URL using *Cloud Explorer*.<br/>
-   ![Copy Blob URL](img/copy-blob-url.png)
+   ![Copy Blob URL](/img/copy-blob-url.png)
 
 1. Try to open blob using a browser, but this time append the SAS. Your URL should look something like this: `https://bookrainerdev.blob.core.windows.net/booknametokens/BookNameTokens.txt?sv=2015-04-05&sr=c&si=BookNameTokens%20Policy%202&sig=hRQlxasvNZKX3voV%2FEsdf12sdf1MBmmDWRZsJ46bOYo%4X`. This time you should be able to download the blob.
 
@@ -116,7 +116,7 @@
 
 1. Search for the following line in `Services/NameGenerator.cs`: `var bookNameTokens = await Task.FromResult(bookNameTokensDummy);`. Describe that we have to replace the static book name tokens with a call to Blob Storage.
 
-1. Replace `Services/NameGenerator.cs` with the implementation from [Exercise-2-Service-Implementation](Assets/Exercise-2-Service-Implementation/NameGenerator.cs).
+1. Replace `Services/NameGenerator.cs` with the implementation from [Exercise-2-Service-Implementation](/Samples/aspnet/assets/Exercise-2-Service-Implementation/NameGenerator.cs).
 
 1. **Discussion points:**
    * Demonstrate downloading of book name tokens from Blob Storage in the debugger
