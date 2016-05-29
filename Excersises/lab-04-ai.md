@@ -17,10 +17,10 @@
 1. Open [Azure Portal](https://portal.azure.com) and sign in.
 
 1. Add *Application Insights* named `PracticalDevOps-Dev` to the resource group `PracticalDevOps-Dev`.<br/>
-   ![Add App Insights](img/create-application-insights.png)
+   ![Add App Insights](/img/create-application-insights.png)
 
 1. Copy *Instrumentation Key* from Azure Portal<br/>
-   ![Copy Instrumentation Key](img/copy-instrumentation-key.png)
+   ![Copy Instrumentation Key](/img/copy-instrumentation-key.png)
 
 
 ## Configure Application to Use Application Insights   
@@ -79,7 +79,7 @@
 1. Run application locally and refresh `http://localhost:2690/api/books` multiple times.
 
 1. Open *Search* in Application Insights.<br/>
-   ![Search AppInsights](img/azure-app-insights-search.png)
+   ![Search AppInsights](/img/azure-app-insights-search.png)
 
 1. See if your application telemetry appears.
 
@@ -89,7 +89,7 @@
    * Brief overview about other Application Insights modules (e.g. for IaaS)
 
 1. Open *Application Insights Search* in Visual Studio while debugging your application. Refresh `http://localhost:2690/api/books` multiple times. See if your application telemetry appears.<br/>
-   ![Application Insights Search](img/visual-studio-application-insights.png)
+   ![Application Insights Search](/img/visual-studio-application-insights.png)
    
  1. **Discussion points:**
     * Point out how calls to dependent services are tracked automatically
