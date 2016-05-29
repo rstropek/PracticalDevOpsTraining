@@ -23,4 +23,5 @@
 
 If you have time left, you could additionally cover topics like:
 
+* Multiple Repositories per Team Project
 * 
