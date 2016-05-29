@@ -14,10 +14,10 @@
 1. Open [Azure Portal](https://portal.azure.com) and sign in.
 
 1. Trigger *Template Export* for Resource Group `PracticalDevOps-Dev`:<br/>
-   ![Export Template](img/azure-export-template.png)
+   ![Export Template](/img/azure-export-template.png)
 
 1. Download exported template and make yourself familiar with the code.<br/>
-   ![Download Template](img/azure-template-download.png)
+   ![Download Template](/img/azure-template-download.png)
 
 1. **Discussion points:**
    * Describe basic concepts of Azure Resource Manager and ARM templates
@@ -34,15 +34,15 @@ If you are very familiar with PowerShell, you can do the following steps using t
 ## Edit and Deploy Using Azure Portal
 
 1. Save the exported template using the name `PracticalDevOps`.<br/>
-   ![Save Template](img/azure-save-template.png)
+   ![Save Template](/img/azure-save-template.png)
 
 1. Edit the ARM template in Azure Portal.<br/>
-   ![Edit Template](img/azure-edit-template.png)
+   ![Edit Template](/img/azure-edit-template.png)
    
 1. Replace all `-dev` by `-test` and save the changed template.
 
 1. Deploy changed template with the following parameters. This step might take a while.<br/>
-   ![Deploy Template](img/azure-deploy-template.png)
+   ![Deploy Template](/img/azure-deploy-template.png)
    
 
 ## Use Template from GitHub
