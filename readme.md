@@ -4,7 +4,7 @@
 
 This repository and its content has been created for the training "Practical DevOps". Its content is described below. The trainings take place all over Western Europe in spring 2016. Note that the content of the repository will not be kept up to date after all the trainings took place.
 
-Note that [Martin Hinshelwood](https://nkdagility.com/company/about-martin-hinshelwood/) has created a modified version based on this training. His version starts with VSTS and Continuous Integration/Delivery from the beginning instead of adding it in exercise 6. You can find this variant of the training [in his GitHub repository](https://github.com/nkdAgility/Practical-DevOps-Workshop).
+Note that [Martin Hinshelwood](https://nkdagility.com/company/about-martin-hinshelwood/) has created a modified version based on this training. His version starts with VSTS and Continuous Integration/Delivery from the beginning instead of adding it in exercise 6. You can find this variant of the training [in his GitHub repository](https://github.com/nkdAgility/Practical-DevOps-Workshop). [Tiago Pascoal](http://pascoal.net/) has also created a variant of the course for his delivery of the workshop in Lisbon. You can find Tiago's version of the training [in his GitHub repository](https://github.com/tspascoal/Practical-DevOps-Workshop).
 
 
 ## Slides and Exercises
