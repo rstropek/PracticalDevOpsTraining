@@ -15,8 +15,6 @@ Note that [Martin Hinshelwood](https://nkdagility.com/company/about-martin-hinsh
 
 The training outline is available in [Excel](DevOpsPartnerTrainingOutline.xlsx) and [PDF](DevOpsPartnerTrainingOutline.pdf).
 
-Slides and exercises are currently still work in progress.
-
 
 ## Training Content
 
