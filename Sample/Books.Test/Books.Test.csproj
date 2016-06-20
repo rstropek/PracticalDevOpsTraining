@@ -145,6 +145,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="IntegrationTestWithoutFakes.cs" />
     <Compile Include="IntegrationTest.cs" />
     <Compile Include="DemoTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
