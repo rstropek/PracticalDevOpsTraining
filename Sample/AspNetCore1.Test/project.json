@@ -1,9 +1,5 @@
 {
   "dependencies": {
-    "Microsoft.NETCore.App": {
-      "type": "platform",
-      "version": "1.0.0-rc2-*"
-    },
     "xunit": "2.1.0-rc2-*",
     "dotnet-test-xunit": "1.0.0-rc2-*",
     "AspNetCore1": "1.0.0"
@@ -13,7 +9,13 @@
       "imports": [
         "dotnet5.4",
         "portable-net451+win8"
-      ]
+      ],
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "version": "1.0.0-rc2-3002702",
+          "type": "platform"
+        }
+      }
     }
   },
   "testRunner": "xunit"
