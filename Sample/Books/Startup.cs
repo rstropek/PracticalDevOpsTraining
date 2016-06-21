@@ -41,6 +41,7 @@ namespace Books
         public void Configuration(IAppBuilder app)
         {
             TelemetryConfiguration.Active.InstrumentationKey = ConfigurationManager.AppSettings["InstrumentationKey"];
+            TelemetryConfiguration.Active.TelemetryChannel.DeveloperMode = true;
 
             // Allow CORS
             app.UseCors(CorsOptions.AllowAll);
